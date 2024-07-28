@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Word Meaning Finder",
+    "version": "1.0",
+    "permissions": [
+        "contextMenus",
+        "notifications",
+        "scripting",
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "48": "icons/icon48.png"
+    }
+}
+

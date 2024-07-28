@@ -1,0 +1,9 @@
+{
+    "name": "com.example.native_messaging",
+    "description": "Native Messaging Host Example",
+    "path": "C:\\path\\to\\native_messaging_host.py",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://<your-extension-id>/"
+    ]
+}
